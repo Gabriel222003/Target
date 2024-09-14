@@ -1,0 +1,13 @@
+SP = float(input("Faturamento de SP:"))
+RJ = float(input("Faturamento de RJ:"))
+MG = float(input("Faturamento de MG:"))
+ES = float(input("Faturamento de ES:"))
+Outros = float(input("Faturamento de Outros:"))
+
+total = SP + RJ + MG + ES + Outros
+
+print("SP: {:.2f}%".format(SP*100/total))
+print("RJ: {:.2f}%".format(RJ*100/total))
+print("MG: {:.2f}%".format(MG*100/total))
+print("ES: {:.2f}%".format(ES*100/total))
+print("Outros: {:.2f}%".format(Outros*100/total))
