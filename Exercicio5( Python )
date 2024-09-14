@@ -1,0 +1,10 @@
+x = input("Escreva algo aqui: ")
+
+x_reverso = ""
+
+
+for i in range(len(x)-1, -1, -1):
+    x_reverso += x[i]
+
+
+print("String reversa:\n", x_reverso)
