@@ -1,0 +1,21 @@
+L = []
+fuga = 0
+
+while True:
+    x = float(input())
+    if x == -1:
+        break
+    L.append(x)
+
+sem_zero = [f for f in L if f > 0]
+
+max = max(L)
+min = min(sem_zero)
+med = sum(sem_zero)/ len(sem_zero)
+
+dias = len([f for f in L if f > med])
+
+
+print("Menor valor de faturamento no mes:", min)
+print("Maior valor de faturamento no mes:", max)
+print("Dias que o faturamento foi maior que a media:", dias)
